@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head><style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.about-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.email {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.location {
+    font-size: 16px;
+    color: #777;
+}
+
+.bio, .skills, .social-links {
+    margin: 20px 0;
+    text-align: left;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.bio p, .skills ul, .social-links a {
+    font-size: 16px;
+    color: #555;
+}
+
+.skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills ul li {
+    margin: 5px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    background-color: #357ae8;
+}
+
+</style>
+<body>
+<div class="about-container">
+    <div class="about-card">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+        <h1>Rehaan Ahmad</h1>
+        <p class="email">rehaan.ahmad@example.com</p>
+        <p class="location">Kanpur, India</p>
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>Hello! I'm Rehaan Ahmad, a second-year B.Tech student at Kanpur Institute of Technology. I have a passion for software development, especially in Java and Full Stack Development. I've completed several internships and love learning new technologies.</p>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java Development</li>
+                <li>Full Stack Development</li>
+                <li>SQL & Database Management</li>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <h2>Contact & Social</h2>
+            <a href="mailto:rehaan.ahmad@example.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/rehaanahmad">LinkedIn</a>
+            <a href="https://github.com/rehaanahmad">GitHub</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

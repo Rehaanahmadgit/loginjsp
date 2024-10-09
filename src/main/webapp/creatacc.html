@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Google Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head><style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.create-account-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.google-logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+.create-account-form h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.create-account-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account-form .input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-account-form input[type="text"],
+.create-account-form input[type="email"],
+.create-account-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-account-form .input-group input[type="text"] {
+    width: 48%;
+}
+
+.create-account-form input:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+.create-account-form small {
+    color: #555;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ae8;
+}
+
+.alternative {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alternative a {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.alternative a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+<div class="create-account-container">
+    <div class="create-account-form">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
+        <h2>Create your Google Account</h2>
+        <form action="create" method="POST">
+            <div class="input-group">
+                <input type="text" name="first_name" placeholder="First name" required>
+                <input type="text" name="last_name" placeholder="Last name" required>
+            </div>
+            <input type="email" name="email" placeholder="Your email address" required>
+            <small>You can use letters, numbers & periods</small>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+            <small>Use 8 or more characters with a mix of letters, numbers & symbols</small>
+            <button type="submit">Next</button>
+        </form>
+        <div class="alternative">
+            <p>Already have an account? <a href="index.jsp">Sign in instead</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
